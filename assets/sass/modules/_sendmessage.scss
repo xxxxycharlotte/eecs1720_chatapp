@@ -1,0 +1,44 @@
+.send-area{
+    width: 100%;
+    height: auto;
+}
+
+.message-send{
+    width: 90%;
+    height:auto;
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+
+
+    textarea{
+        font-family:$default-family  !important;
+        width: 90%;
+        padding: 20px;
+        margin: 8px 0;
+        //background-image: $main-bg-color;
+        border-radius: 60px 20px;
+        font-size: 15px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        border: 10px double #ffffff;
+    }
+    input[type=submit]{
+        font-family:$default-family  !important;
+        text-decoration: none;
+        background-color: $green;
+        border-radius: 50px 20px;
+        border: 5px double #ffffff;
+        color: black;
+        font-size: 15px;
+        padding: 8px;
+        width: 100px;
+        height: 40px;
+        margin-top: 7%;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin-left: 2%;
+    }
+    input[type=submit]:hover{
+        text-decoration: underline;
+    }
+}

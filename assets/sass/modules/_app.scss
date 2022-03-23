@@ -1,0 +1,40 @@
+#app{
+  min-height: 530px;
+}
+
+.chat-area{
+  width: 80%;
+ height:auto;
+  text-align: center;
+  margin: 1% auto;
+  //background-image: $main-bg-color;
+  border: 15px double #ffffff;
+  border: 2px solid none;
+  padding: 10px;
+  border-radius: 80px 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+}
+
+h2{
+    font-size: 27px;
+    margin:2%;
+    text-align:center;
+}
+
+
+
+  input[type=text] {
+    font-family:$default-family  !important;
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-image: $main-bg-color;
+    border-radius: 60px 20px;
+    font-size: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: 7px double #ffffff;
+    float: left;
+    margin-left: 5%;
+  }
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeChat</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <h2>let's  WeChat  here</h2>
+    <main id="app" class="chat-area">  
+
+        <section class='user-status'>
+            <h3 class='hidden'>Live Chat Info</h3>
+            <span class="connection">Online User(s):{{connections}} </span>
+            <small v-if="typing" class="typing">{{typing}} is typing</small>
+           
+        </section>
+
+        
+       <section class="messages">
+        <!-- vue custom component goes here -->      
+            <h3 class='hidden'>Messages</h3>
+            <ul id="messages" v-for="message in messages">
+                <newmessage :msg="message" :socketid="socketID" ></newmessage>
+            </ul>
+        </section>
+
+        
+       
+        
+        <section class="send-area"> 
+            <h3 class="hidden">Send Message</h3>
+            <input type="text" v-model="username" class="username" id="username"  placeholder="type your awesome name here">
+            <div class="message-send">
+            <textarea v-model="message" class="text-message" placeholder="type your awesome text here" ></textarea>
+            <input @click.prevent="dispatchMessage" type="submit" value="SEND">
+            </div>
+        </section>
+    </main>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script defer type="module" src="js/main.js"></script>
+
+</body>
+</html>

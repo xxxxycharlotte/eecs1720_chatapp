@@ -1,0 +1,49 @@
+.messages{
+    min-height: 350px;
+}
+
+.new-message {
+    padding: 10px;
+    background-color: $blue;
+    color: black;
+    border-radius: 8px;
+    float:left;
+    clear: both;
+    border-radius: 50px 20px;
+    h4{
+      font-size: 15px ;
+    }
+    p{
+      font-size: 14px ;
+    }
+    h5{
+      font-size: 10px;
+      padding-right: 5px;
+    }
+  }
+  
+.my-message{
+   margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: $green;
+    float: right;
+  }
+  
+.message-name{ 
+    float: left;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+.message-content{
+  border-radius: 50px 20px;
+  padding: 5px;
+  margin-top: 20px;
+  border: 5px double #ffffff;
+}
+
+.message-time{
+
+  float: right;
+
+}

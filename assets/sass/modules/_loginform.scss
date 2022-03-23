@@ -1,0 +1,46 @@
+
+
+.login_form{
+
+    text-align: center;
+    margin: 5% auto;
+    width: 60%;
+    height: auto;
+    //background-image: $main-bg-color;
+    border: 2px solid none;
+    padding: 10px;
+    border-radius: 100px 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border: 15px double #ffffff;
+
+
+
+
+      a{
+        background-image: $main-bg-color;
+        font-family:$default-family  !important;
+        text-decoration: none;
+        display: inline-block;
+        background-color: $blue;
+        border-radius: 50px 20px;
+        border: 4px double #ffffff;
+        color: black;
+        text-align: center;
+        font-size: 20px;
+        padding: 8px 20px;
+        width: 60%;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin-bottom: 10%;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
+h1{
+    font-size: 35px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
