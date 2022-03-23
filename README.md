@@ -1,6 +1,6 @@
 # Project
 This is  an interactive chat application built with Node, Express and Vue (with socket.io) <br>
-[Heroku](https://chat-app-meng.herokuapp.com/)
+[Heroku](https://eecs1720chatappxyc.herokuapp.com/chat)
 
 ## Functions
 ✔️ Allow user input their username <br>
