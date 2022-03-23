@@ -1,7 +1,7 @@
 {
-  "name": "yuchenchatapp",
+  "name": "mengchatapp",
   "version": "1.0.0",
-  "description": "a chatapp build with vue and node.js",
+  "description": "a fun in theory node build",
   "main": "app.js",
   "scripts": {
     "start-dev": "nodemon app",
@@ -9,7 +9,7 @@
     "start": "node app"
   },
   "keywords": [],
-  "author": "Yuchen Xia",
+  "author": "Zhu Meng",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
